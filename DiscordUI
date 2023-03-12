@@ -43,6 +43,11 @@ UI.Create = function(class, properties, radius)
 		local uicorner = Instance.new("UICorner", instance)
 		uicorner.CornerRadius = radius
 	end
+
+if radius then
+	local uicornerS = Instance.new("UIStroke", instance)
+	uicornerS.CornerRadius = radius
+end
     
 	return instance
 end
